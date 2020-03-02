@@ -1,6 +1,6 @@
 .stack-work/
 .serverless/
-my-haskell-lambda.cabal
+Paloma.cabal
 build/
 .DS_Store
 *~

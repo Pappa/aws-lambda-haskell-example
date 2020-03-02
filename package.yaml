@@ -1,12 +1,12 @@
-name: my-haskell-lambda
+name: Paloma
 version: 0.1.0
-github: "Pappa/my-haskell-lambda"
+github: "Pappa/Paloma"
 license: BSD3
 author: "Pappa"
 maintainer: "dr.pappa@gmail.com"
 copyright: "MIT"
 
-description: Please see the README on GitHub at <https://github.com/Pappa/my-haskell-lambda#readme>
+description: Please see the README on GitHub at <https://github.com/Pappa/Paloma#readme>
 
 dependencies:
   - base >= 4.7 && < 5
@@ -29,7 +29,7 @@ executables:
     cc-options: -static
     ld-options: -static -pthread
     dependencies:
-      - my-haskell-lambda
+      - Paloma
 
 default-extensions:
   - TemplateHaskell
