@@ -1,4 +1,5 @@
 .stack-work/
+.serverless/
 my-haskell-lambda.cabal
 build/
 .DS_Store
