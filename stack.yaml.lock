@@ -11,6 +11,20 @@ packages:
       sha256: 62e1f09cddc92bfe20d0f5ffce195152e67e9887524caad98d9f4d869430846c
   original:
     hackage: aws-lambda-haskell-runtime-2.0.3
+- completed:
+    hackage: amazonka-core-1.6.1@sha256:9bc59ce403c6eeba3b3eaf3f10e5f0b6a33b6edbbf8f6de0dd6f4c67b86fa698,5135
+    pantry-tree:
+      size: 3438
+      sha256: c13e643176308771491ec0e06390e269047bb1b28be4535992842f7426a95eb4
+  original:
+    hackage: amazonka-core-1.6.1
+- completed:
+    hackage: amazonka-dynamodb-1.6.1@sha256:6b8852049c65207a7b3741aafa3e4e6c77cfa115e05de3c74868218ae642b6b0,4459
+    pantry-tree:
+      size: 8333
+      sha256: bd7469b4077272ecf37fe30dcff64c3af0a820b610ca592c172d7fa97d9e6833
+  original:
+    hackage: amazonka-dynamodb-1.6.1
 snapshots:
 - completed:
     size: 524154
