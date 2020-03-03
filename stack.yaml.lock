@@ -12,6 +12,13 @@ packages:
   original:
     hackage: aws-lambda-haskell-runtime-2.0.3
 - completed:
+    hackage: amazonka-1.6.1@sha256:d863557379350ed6bbb91187abeb8c349a654f60b140d138710486f58ae7c476,3536
+    pantry-tree:
+      size: 992
+      sha256: 55747f9b56063ea1be73a962e1ce44528b9856e119e2d9f1238397b3112b6e70
+  original:
+    hackage: amazonka-1.6.1
+- completed:
     hackage: amazonka-core-1.6.1@sha256:9bc59ce403c6eeba3b3eaf3f10e5f0b6a33b6edbbf8f6de0dd6f4c67b86fa698,5135
     pantry-tree:
       size: 3438
