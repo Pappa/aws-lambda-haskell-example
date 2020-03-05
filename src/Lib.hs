@@ -3,7 +3,7 @@ module Lib where
 import GHC.Generics
 import Data.Aeson
 
-import Network.AWS.DynamoDB
+import Aws.Lambda
 
 data Person = Person
   { personName :: String
