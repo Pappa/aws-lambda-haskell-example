@@ -6,50 +6,14 @@ org: drpappa
 package:
   artifact: build/function.zip
 
-custom:
-  dbUsersTable: paloma_user
-
 provider:
   name: aws
   profile: serverless-agent
   runtime: provided
   region: eu-west-1
-  environment:
-    DB_USERS_TABLE: ${self:custom.dbUsersTable}
 
 functions:
-  users:
-    handler: src/User.handler
+  hello:
+    handler: src/Lib.handler
     layers:
       - arn:aws:lambda:eu-west-1:785355572843:layer:aws-haskell-runtime:2
-    events:
-      - http:
-          path: users/{uuId}
-          method: get
-          request:
-            parameters:
-              paths:
-                uuId: true
-          cors: true
-          integration: LAMBDA
-
-resources:
-  # API Gateway Errors
-  # - ${file(resources/api-gateway-errors.yml)}
-  # DynamoDB
-  - ${file(resources/dynamodb.yml)}
-
-iamRoleStatements:
-  - Effect: Allow
-    Action:
-      - dynamodb:DescribeTable
-      - dynamodb:Query
-      - dynamodb:Scan
-      - dynamodb:GetItem
-      - dynamodb:PutItem
-      - dynamodb:UpdateItem
-      - dynamodb:DeleteItem
-    # Restrict our IAM role permissions to
-    # the specific table for the stage
-    Resource:
-      - "Fn::GetAtt": [UsersTable, Arn]
