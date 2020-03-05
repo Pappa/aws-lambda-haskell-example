@@ -2,7 +2,7 @@ module Lib where
 
 import GHC.Generics
 import Data.Aeson
-import Aws.Lambda
+
 import Network.AWS.DynamoDB
 
 data Person = Person
