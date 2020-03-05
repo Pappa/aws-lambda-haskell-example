@@ -1,6 +1,7 @@
-# Paloma
+# my-haskell-lambda
 
 ```
 make
-sls deploy
+#cp $(stack --docker path --local-install-root)/bin/bootstrap build
+#cd build && zip function.zip bootstrap && rm bootstrap && cd ..
 ```
